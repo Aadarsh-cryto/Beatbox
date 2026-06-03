@@ -1,0 +1,131 @@
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  background: #121212;
+  color: white;
+  padding: 30px 40px;
+}
+
+.hero-section {
+  height: 350px;
+  background-image: url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1600");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 50px;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  max-width: 700px;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #f0f0f0;
+}
+
+.section-title {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1db954;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.music-card,
+.album-card,
+.feature-card {
+  background: #181818;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+.music-card,
+.album-card {
+  padding: 18px;
+}
+
+.music-card {
+  overflow: hidden;
+}
+
+.music-audio {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin-top: 10px;
+}
+
+
+
+.compact-card {
+  min-height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.compact-card h3 {
+  color: white;
+}
+
+.empty-state {
+  background: #181818;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: center;
+  color: #b3b3b3;
+}
+
+.loading {
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px;
+  }
+
+  .hero-section {
+    height: 280px;
+  }
+
+  .hero-overlay {
+    padding: 25px;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+}

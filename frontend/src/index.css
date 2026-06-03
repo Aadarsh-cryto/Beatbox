@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #121212;
+  font-family: "Segoe UI", sans-serif;
+}
+  body::-webkit-scrollbar {
+  width: 0;
+}
