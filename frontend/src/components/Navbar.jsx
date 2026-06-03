@@ -26,9 +26,7 @@ function Navbar() {
   🎧 BeatBox
 </Link>
 
-<button>
-  <Link to="/api" className="api-link">API</Link>
-</button>
+
 
       {/* LEFT LINKS */}
       <div className="nav-links">
