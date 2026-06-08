@@ -62,6 +62,7 @@
   border: 1px solid #2a2a2a;
   border-radius: 14px;
   transition: all 0.3s ease;
+  
 }
 
 .music-card,
@@ -107,7 +108,11 @@
 .loading {
   color: #888;
 }
-
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: #1db954;
+  box-shadow: 0 0 20px #1db954;
+}
 @media (max-width: 768px) {
   .home-container {
     padding: 20px;
