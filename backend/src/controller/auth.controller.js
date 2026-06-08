@@ -29,7 +29,7 @@ const token = jwt.sign({
     role:user.role
 },process.env.JWT_SECRET)
 
-res.cookie("token",token);
+res.cookie("token",token)
  res.status(201).json({
     message:"user regsitred succesfully",
     user:{
@@ -77,7 +77,12 @@ const user = await userModel.findOne({
         id:user._id,
         role:user.role
     },process.env.JWT_SECRET)
-    res.cookie("token",token)
+    res.cookie("token", token, {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+    maxAge: 7 * 24 * 60 * 60 * 1000
+});
     res.status(200).json({
         message:"user logged succefully",
         user:{
@@ -91,7 +96,11 @@ const user = await userModel.findOne({
 }
 
 async function logoutUser(req,res){
-    res.clearCookie("token")
+    res.clearCookie("token", {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none"
+});
     res.status(200).json({
         message:"user logout succesfully"
     })
