@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-   baseURL: "https://beatbox-backend-0hhw.onrender.com",
+   baseURL: "https://beatbox-backend-0hhw.onrender.com/api",
     
   withCredentials: true
 });
